@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema di Valutazione Professionale</title>
+  <link rel="stylesheet" href="/src/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+  <div id="root" class="container">
+    <!-- Left panel (Profile) -->
+    <div class="left-panel">
+      <!-- Barra superiore con pulsanti -->
+      <div class="btn-section">
+        <button class="btn btn-small"><i class="fas fa-home"></i> Home</button>
+        <button class="btn btn-small"><i class="fas fa-bars"></i> Menu</button>
+      </div>
+
+      <!-- Campo di ricerca -->
+      <div class="search-container">
+        <input type="text" class="search-box" placeholder="Cerca...">
+      </div>
+
+      <!-- Sezione foto profilo -->
+      <div class="profile-section">
+        <img src="/images/profile-placeholder.jpg" alt="Foto profilo" class="profile-photo">
+        <div class="profile-info-container">
+          <div class="profile-name">Mario Rossi</div>
+          <div class="profile-position">Senior Manager</div>
+        </div>
+      </div>
+
+      <div class="profile-info">
+        <span class="profile-label">Data di nascita</span>
+        <div class="profile-value-with-age">
+          <span class="profile-value">15/05/1980</span>
+          <span class="profile-age">(43 anni)</span>
+        </div>
+      </div>
+
+      <div class="profile-info">
+        <span class="profile-label">People Manager</span>
+        <span class="profile-value">Sì</span>
+      </div>
+
+      <div class="profile-info">
+        <span class="profile-label">Inquadramento</span>
+        <span class="profile-value">Quadro</span>
+      </div>
+
+      <div class="profile-info">
+        <span class="profile-label">Responsabile</span>
+        <span class="profile-value">Luigi Bianchi</span>
+      </div>
+
+      <div class="profile-info">
+        <span class="profile-label">Unità Organizzativa</span>
+        <span class="profile-value">Sviluppo Prodotto</span>
+      </div>
+
+      <div class="profile-info">
+        <span class="profile-label">Chief</span>
+        <span class="profile-value">Giovanni Verdi</span>
+      </div>
+
+      <div class="btn-container">
+        <button class="btn"><i class="fas fa-graduation-cap"></i> Education & More</button>
+      </div>
+
+      <div style="margin-top: 50px;">
+        <button class="btn"><i class="fas fa-language"></i> Autocertificazione Lingue</button>
+      </div>
+    </div>
+
+    <!-- Center panel (Empty) -->
+    <div class="center-panel">
+      <button class="eval-btn"><i class="fas fa-file-signature"></i> Autodichiarazione Esperienze</button>
+    </div>
+
+    <!-- Right panel (Evaluation) -->
+    <div class="right-panel">
+      <div class="btn-group">
+        <button class="eval-btn">Evaluation Perf. 2023 (EVA2022)</button>
+        <button class="eval-btn">Evaluation Perf. 2024 (EVA2023)</button>
+        <button class="eval-btn">Evaluation Perf. 2025 (EVA2024)</button>
+      </div>
+
+      <div class="tab-container">
+        <div class="tab">OWNERSHIP 2024</div>
+        <div class="tab">HUMAN TOUCH 2024</div>
+        <div class="tab">INNOVATION 2024</div>
+        <div class="tab">SIMPLIFICATION 2024</div>
+      </div>
+
+      <div class="section-header">
+        <i class="fas fa-chart-line"></i> PUNTI DI FORZA E AREE DI SVILUPPO (EVA24)
+      </div>
+
+      <div class="two-column">
+        <div class="column">
+          <div class="section-title">Punti di Forza</div>
+          <div class="section-box"></div>
+        </div>
+        <div class="column">
+          <div class="section-title">Aree di Sviluppo</div>
+          <div class="section-box"></div>
+        </div>
+      </div>
+
+      <div class="section-header">
+        <i class="fas fa-exchange-alt"></i> DISPONIBILITA' AL CAMBIAMENTO (my experience)
+      </div>
+
+      <div class="skill-section">
+        <div><i class="fas fa-map-marker-alt"></i> Sono disponibile a spostarmi</div>
+        <div style="margin-top: 20px;"><i class="fas fa-building"></i> Sono disponibile a lavorare in un perimetro di Gruppo</div>
+        <div style="margin-top: 20px;"><i class="fas fa-user-tie"></i> Per quanto riguarda il ruolo</div>
+        <div style="margin-top: 20px;"><i class="fas fa-lightbulb"></i> Quali sono i tre motivi che potrebbero spingerti a cambiare</div>
+      </div>
+
+      <div class="section-header">
+        <i class="fas fa-road"></i> Percorsi di sviluppo
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
